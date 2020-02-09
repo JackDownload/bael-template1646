@@ -6,7 +6,7 @@
         <div class="item xs-block xs-full-height xs-flex">
         <div class="feat-wrapper" v-if="theThumb"><transition appear name="fade"><img class="featured-image" :src="thumbnail" :alt="title"></transition></div>
           <nuxt-link class="xs-text-center xs-flex xs-full-height xs-flex-align-center xs-flex-justify-center xs-text-center" :to="p._path">
-            {{p.title}}
+            Név2:{{p.title}}{{p.thumbnail}}{{thumbnail}}
           </nuxt-link>
         </div>
       </div>
