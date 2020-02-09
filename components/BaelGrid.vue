@@ -36,6 +36,7 @@ export default {
       busy: false,
       count: 0
     };
+    await store.commit("SET_THUMB", post.thumbnail);
   },
   methods: {
     pageCheck() {
@@ -103,7 +104,13 @@ export default {
     }
   },
   computed: {
-
+  
+    theThumb() {
+      return this.$store.state.theThumbnail;
+    },
+    allBlogPosts() {
+      return this.$store.state.blogPosts;
+    },
     offset() {
       if (this.queryParam > 1) {
         return Number(this.queryParam - 1) * 12;
