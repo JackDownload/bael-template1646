@@ -7,12 +7,13 @@
                     <div class="xs-text-left xs-flex xs-full-height xs-flex-justify-end xs-flex-align-end xs-width-auto">
                     <div class="feat-wrapper" v-if="theThumb"><transition appear name="fade"><img class="featured-image" :src="thumbnail" :alt="title"></transition></div>
       <nuxt-link class="full-bg-link" :to="p._path">
+       <h1>Névvvv</h1>
            Név{{p.title}}{{p.thumbnail}}
           </nuxt-link>
           </div>
           <nuxt-link  :to="p._path">
           <img  v-lazy="p.thumbnail" :key="p.thumbnail" class="full-bg-image">
-          
+           <h1>Névvvv</h1>
           <div v-if="!p.thumbnail" class="full-bg-color"></div>
           </nuxt-link>
 
@@ -20,7 +21,7 @@
         </div>
                <div v-else class="item item-txt xs-block xs-full-height xs-flex xs-relative xs-flex-align-center xs-flex-justify-center xs-text-center">
      <nuxt-link class="nobg-link" :to="p._path">
-           Névvvv:{{p.title}} {{p.thumbnail}}
+          <h1>Névvvv</h1> {{p.title}} {{p.thumbnail}}
           </nuxt-link>
         
 
