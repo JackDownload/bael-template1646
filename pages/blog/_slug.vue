@@ -5,6 +5,7 @@
         <div class="item xs-block xs-full-height">
           <div class="feat-wrapper" v-if="theThumb"><transition appear name="fade"><img class="featured-image" :src="thumbnail" :alt="title"></transition></div>
           <h1 class="xs-py3 main-title">{{title}}</h1>
+          <h1 class="xs-py3 main-title">{{thumbnail}}</h1>
           <no-ssr>
             <div class="xs-mt-5 bold">
             <ul class="list-unstyled xs-flex xs-flex-align-center">
