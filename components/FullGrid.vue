@@ -20,7 +20,7 @@
         </div>
                <div v-else class="item item-txt xs-block xs-full-height xs-flex xs-relative xs-flex-align-center xs-flex-justify-center xs-text-center">
      <nuxt-link class="nobg-link" :to="p._path">
-           {{p.title}}
+           Névvvv:{{p.title}} {{p.thumbnail}}
           </nuxt-link>
         
 
